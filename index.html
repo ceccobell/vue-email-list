@@ -9,7 +9,10 @@
 </head>
 <body>
     <div id="app">
-
+        <button @click="generateTenRandomEmails()">genera 10 email</button>
+        <ul>
+            <li v-for="email in emails">{{ email }}</li>
+        </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/script.js"></script>
